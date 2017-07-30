@@ -8,6 +8,7 @@ html {
 header {
   height: 100vh;
   background-image:url(dog-on-couch.jpg);
+  background-position: right center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -97,11 +98,6 @@ button {
   font-weight: bolder;
 }
 
-#PRODUCTS, #TEAM,
-#CONTACT {
-  height: 100vh;
-}
-
 #ABOUT, #PRODUCTS, #TEAM,
 #CONTACT, #tag {
   display: flex;
@@ -126,4 +122,8 @@ button {
 #CONTACT {
   background-color: #475971;
   color: white;
+}
+
+#message {
+  height: 132px;
 }

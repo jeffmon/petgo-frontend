@@ -9,6 +9,7 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body id="page-top">
         <!-- Navigation -->
@@ -99,8 +100,8 @@
         <hr>
         <div class="row text-center">
           <h3>Try it Now!</h3>
-          <button class="btn btn-xl"><a href="http://bcda0588.ngrok.io/sound">Play a Sound</a></button>
-          <button class="btn btn-xl"><a href="http://bcda0588.ngrok.io/treat">Give a Treat!</a></button>
+          <button class="btn btn-xl" id="play-sound">Play a Sound</button>
+          <button class="btn btn-xl" id="give-treat">Give a Treat!</button>
         </div>
       </div>
     </section>
@@ -115,16 +116,16 @@
         </div><!-- / .row -->
         <div class="row">
           <div class="col-lg-12 text-center">
-            <img src="" class="img-circle" height="200" width="200">
+            <img src="https://68.media.tumblr.com/11130ab634e4cc469e657ef074d9b5d6/tumblr_otnuksNM7J1tjf9x3o1_500.jpg" class="img-rounded" height="200" width="200">
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-1"></div>
-          <div class="col-lg-10 text-center">
-            <h2>Pet Go Starter Pack: $89.99</h2>
+          <div class="col-lg-2"></div>
+          <div class="col-lg-8 text-center">
+            <h3>Pet Go Starter Pack: $89.99</h3>
             <p>This kit includes a pet door, treat box, and access to our beta Pet Go app.  Each product is compatible with Amazon Echo products and linking each device can be done within a matter of minutes. (Amazon Echo products are not included with this kit)</p>
           </div>
-          <div class="col-lg-1"></div>
+          <div class="col-lg-2"></div>
         </div>
       </div>
       <div class="row text-center">
@@ -141,36 +142,32 @@
           </div>
         </div>
         <div class="row text-center">
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-md-6 col-sm-12">
             <img src="http://www.dogbreedplus.com/dog_breeds/images/French_Bulldog.jpg" class="img-circle" height="100" width="100">
             <h3>Jeff</h3>
             <ul class="list-inline social-buttons">
-              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-              <li><a href="#"><i class="fa fa-github-alt"></i></a></li>
+              <li><a href="https://github.com/jeffmon"><i class="fa fa-github-alt"></i></a></li>
             </ul>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-md-6 col-sm-12">
             <img src="http://www.dogbreedplus.com/dog_breeds/images/French_Bulldog.jpg" class="img-circle" height="100" width="100">
             <h3>Seohee</h3>
             <ul class="list-inline social-buttons">
-              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-              <li><a href="#"><i class="fa fa-github-alt"></i></a></li>
+              <li><a href="https://github.com/seolheekim"><i class="fa fa-github-alt"></i></a></li>
             </ul>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-md-6 col-sm-12">
             <img src="http://www.dogbreedplus.com/dog_breeds/images/French_Bulldog.jpg" class="img-circle" height="100" width="100">
             <h3>Alexis</h3>
             <ul class="list-inline social-buttons">
-              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-              <li><a href="#"><i class="fa fa-github-alt"></i></a></li>
+              <li><a href="https://github.com/alexisko"><i class="fa fa-github-alt"></i></a></li>
             </ul>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-md-6 col-sm-12">
             <img src="http://www.dogbreedplus.com/dog_breeds/images/French_Bulldog.jpg" class="img-circle" height="100" width="100">
             <h3>Brandon</h3>
             <ul class="list-inline social-buttons">
-              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-              <li><a href="#"><i class="fa fa-github-alt"></i></a></li>
+              <li><a href="https://github.com/bkam03"><i class="fa fa-github-alt"></i></a></li>
             </ul>
           </div>
         </div>
@@ -206,7 +203,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
-                                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <textarea class="form-control message-form" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
@@ -245,10 +242,9 @@
       </div>
     </footer>
 
+    <script type="text/javascript" src="index.js"></script>
     <!-- Font Awesome -->
     <script src="https://use.fontawesome.com/c384233445.js"></script>
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <!-- Bootstrap Core Javascript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
