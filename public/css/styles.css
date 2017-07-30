@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Francois-One|Raleway');
+
+body,
+html {
+  font-family: 'Raleway', sans-serif;
+}
+
+header {
+  height: 100vh;
+  background-image:url(dog-on-couch.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+h2 {
+  font-family: 'Francois One', sans-serif;
+  font-weight: bolder;
+  margin-bottom: 50px;
+}
+
+hr {
+  width: 70%;
+}
+
+section {
+  padding: 50px;
+}
+
+footer {
+  padding: 15px;
+}
+
+.header-logo {
+  font-family: 'Francois One', sans-serif;
+  font-weight: bolder;
+  font-size: 100px;
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: white;
+
+}
+
+#click-icon {
+  position: absolute;
+  margin: 0;
+  top: 93%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: white;
+}
+
+.navbar-centered {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#tag {
+  height: 50vh;
+  background-image:url(https://68.media.tumblr.com/64a658c4c65db4d0e17e36c8c241895f/tumblr_oa0v8bfThO1r16pgyo1_1280.jpg);
+  background-repeat: no-repeat;
+  background-position: 80% 80%;
+  background-size: cover;
+  position: relative;
+  font-family: 'Francois One', sans-serif;
+  color: white;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+#buy-btn {
+  background-color: #4979bb;
+  color: white;
+}
+
+#PRODUCTS, #TEAM,
+#CONTACT {
+  height: 100vh;
+}
+
+#PRODUCTS {
+  background-color: #f8f8f8;
+}
+
+#CONTACT {
+  background-color: #475971;
+  color: white;
+}
