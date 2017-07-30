@@ -12,4 +12,18 @@ $("#give-treat").click(function() {
   oReq.send();
 });
 
+$("#open-door").click(function() {
+  var oReq = new XMLHttpRequest();
+  oReq.addEventListener('load', reqListener);
+  oReq.open('GET', 'http://bcda0588.ngrok.io/open');
+  oReq.send();
+});
+
+$("#close-door").click(function() {
+  var oReq = new XMLHttpRequest();
+  oReq.addEventListener('load', reqListener);
+  oReq.open('GET', 'http://bcda0588.ngrok.io/close');
+  oReq.send();
+});
+
 function reqListener() {}

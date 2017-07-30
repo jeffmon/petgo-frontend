@@ -110,7 +110,7 @@ button {
   flex-direction: column;
 }
 
-#buy-btn {
+#buy-btn, .test-btn {
   background-color: #4979bb;
   color: white;
 }
